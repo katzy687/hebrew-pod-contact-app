@@ -1,0 +1,69 @@
+html {
+    font-family: Comic Sans MS;
+}
+
+#directory {
+    background: #eee;
+    border-radius: 10px;
+}
+
+#toolbar-title {
+    font-family: monospace;
+    cursor: pointer;
+    cursor: hand;
+    display: table;
+    padding-left: 50px;
+}
+
+#directoryHeader {
+    text-decoration: underline;
+    font-size: 33px;
+    font-family: monospace;
+    padding-top: 10px
+}
+
+h2 {
+    font-size: 22px;
+}
+
+.svg {
+    position: relative;
+    height: 5%;
+    width: 5%;
+}
+
+.remove {
+    padding-left: 30px;
+}
+
+
+/*Animations*/
+
+/* The starting CSS styles for the enter animation */
+main.ng-enter {
+  transition:0.5s linear all;
+  opacity:0;
+}
+
+/* The finishing CSS styles for the enter animation */
+main.ng-enter.ng-enter-active {
+  opacity:1;
+}
+
+/*remove from list*/
+#contact-list md-list-item.ng-leave{
+  transition: 0.2s linear all;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+#contact-list md-list-item.ng-leave.ng-leave-active {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+/*stagger*/
+#contact-list md-list-item.ng-leave-stagger {
+  transition-delay: 0.2s;
+  transition-duration: 0;
+}

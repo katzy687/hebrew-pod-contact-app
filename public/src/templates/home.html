@@ -1,0 +1,23 @@
+
+<div id="directory" style="padding-bottom: 100px;" ng-cloak class="container fade" flex="70" flex-offset="15">
+
+<div flex-offset="35">
+  <h1 id="directoryHeader">Directory</h1>
+  <md-list id="contact-list">
+    <md-list-item ng-repeat="contact in contacts" class="md-2-line">
+      <div class="md-list-item-text" layout="column">
+        <h2>
+          <md-icon class="svg" md-svg-src="svg/{{(contact.smiley)?contact.smiley:'rofl'}}.svg" class="avatar"></md-icon> {{contact.name}}
+        </h2>
+        <p>Email: {{contact.email}}
+          <a href="" aria-label="delete" class="remove" ng-click="removeContact(contact._id)"><i class="material-icons">delete</i></a>
+        </p>
+      </div>
+    </md-list-item>
+  </md-list>
+  <br>
+  <a href="" aria-label="delete" ng-click="removeAll()">Remove All Contacts</a>
+  <md-button flex-offset="10" class="md-raised md-primary" aria-label="add contact" ui-sref="adduser"> Add Contacts </md-button>
+</div>
+
+</div>

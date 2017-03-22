@@ -1,0 +1,39 @@
+html {
+    font-family: Comic Sans MS;
+}
+
+#main {
+    background: #eee;
+    /*width: 80%;
+  margin: 30px auto;*/
+    border-radius: 10px;
+}
+
+#toolbar-title {
+    font-family: monospace;
+    cursor: pointer;
+    cursor: hand;
+    display: table;
+    padding-left: 50px;
+}
+
+#directoryHeader {
+    text-decoration: underline;
+    font-size: 33px;
+    font-family: monospace;
+    padding-top: 10px
+}
+
+h2 {
+    font-size: 22px;
+}
+
+.svg {
+    position: relative;
+    height: 5%;
+    width: 5%;
+}
+
+.remove {
+    padding-left: 30px;
+}

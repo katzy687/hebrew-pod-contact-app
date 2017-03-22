@@ -1,0 +1,20 @@
+<div ng cloak class="container fade" flex="66" flex-offset="20">
+
+  <h1>Add Contact</h1>
+
+  <form ng-submit="addContact()">
+    <md-input-container flex="65" class="md-icon-float md-block">
+      <!-- Use floating label instead of placeholder -->
+      <label>Name</label>
+      <input ng-model="newcontact.name" type="text" ng-required="true">
+    </md-input-container>
+
+    <md-input-container flex="65" class="md-block">
+      <!-- Use floating placeholder instead of label -->
+      <input ng-model="newcontact.email" type="email" placeholder="Email (required)" ng-required="true">
+    </md-input-container>
+
+    <md-button flex-offset="55" class="md-raised md-primary" type="submit">Add</md-button>
+  </form>
+
+</div>

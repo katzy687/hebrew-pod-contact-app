@@ -1,0 +1,32 @@
+{
+  "name": "material",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build",
+    "build": "webpack -d && webpack-dev-server --content-base src/ --inline --hot --port 1337"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "1.5.9",
+    "angular-animate": "1.5.9",
+    "angular-aria": "1.5.9",
+    "angular-material": "1.1.3",
+    "angular-ui-router": "^0.4.2"
+  },
+  "devDependencies": {
+    "concurrently": "^3.4.0",
+    "css-loader": "^0.27.3",
+    "lite-server": "^2.3.0",
+    "node-sass": "^4.5.1",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.15.0",
+    "typescript": "^2.2.1",
+    "typings": "^2.1.0",
+    "webpack": "^2.3.0",
+    "webpack-dev-server": "^2.4.2"
+  }
+}
