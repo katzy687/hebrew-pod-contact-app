@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run build",
-    "build": "webpack -d && webpack-dev-server --content-base src/ --inline --hot --port 1337"
+    "start": "npm run build && npm run dev && npm run open",
+    "build": "webpack -d && webpack-dev-server --content-base src/ --inline --hot --port 1337",
+    "open": "concurrently \"http-server -a localhost -p 1234\" \"open http://localhost:1234/build\""
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +21,7 @@
   "devDependencies": {
     "concurrently": "^3.4.0",
     "css-loader": "^0.27.3",
+    "http-server": "^0.9.0",
     "lite-server": "^2.3.0",
     "node-sass": "^4.5.1",
     "sass-loader": "^6.0.3",
