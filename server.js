@@ -11,7 +11,8 @@ var open = require('open');
 var port = process.env.PORT || 4000;
 
 app.use('/', express.static(__dirname + '/public/src'));
-app.use('/', express.static(__dirname + '/public/src/node_modules'));
+app.use(express.static('node_modules'));
+
 
 mongoose.connect(config.getDbConnectionString());
 setupController(app);
